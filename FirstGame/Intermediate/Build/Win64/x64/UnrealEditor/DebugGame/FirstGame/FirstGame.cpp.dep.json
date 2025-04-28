@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\tzcro\\documents\\unreal book project\\firstgame\\source\\firstgame\\firstgame.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\tzcro\\documents\\unreal book project\\firstgame\\intermediate\\build\\win64\\x64\\firstgameeditor\\debuggame\\unrealed\\sharedpch.unrealed.project.nonoptimized.valapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\tzcro\\documents\\unreal book project\\firstgame\\intermediate\\build\\win64\\x64\\unrealeditor\\debuggame\\firstgame\\definitions.firstgame.h",
+            "c:\\users\\tzcro\\documents\\unreal book project\\firstgame\\source\\firstgame\\firstgame.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
