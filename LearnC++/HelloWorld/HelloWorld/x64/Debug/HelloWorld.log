@@ -1,0 +1,4 @@
+﻿  HelloWorldSource.cpp
+C:\Users\tzcro\Documents\GameProjects\LearningUE5\LearnC++\HelloWorld\HelloWorldSource.cpp(22,6): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\tzcro\Documents\GameProjects\LearningUE5\LearnC++\HelloWorld\HelloWorldSource.cpp(28,55): warning C4305: 'argument': truncation from 'double' to 'float'
+  HelloWorld.vcxproj -> C:\Users\tzcro\Documents\GameProjects\LearningUE5\LearnC++\HelloWorld\x64\Debug\HelloWorld.exe
