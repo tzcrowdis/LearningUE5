@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\tzcro\\documents\\gameprojects\\learningue5\\firstgame\\source\\firstgame\\firstactor.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\tzcro\\documents\\gameprojects\\learningue5\\firstgame\\intermediate\\build\\win64\\x64\\firstgameeditor\\debuggame\\unrealed\\sharedpch.unrealed.project.nonoptimized.valapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\tzcro\\documents\\gameprojects\\learningue5\\firstgame\\intermediate\\build\\win64\\x64\\unrealeditor\\debuggame\\firstgame\\definitions.firstgame.h",
+            "c:\\users\\tzcro\\documents\\gameprojects\\learningue5\\firstgame\\source\\firstgame\\firstactor.h",
+            "c:\\users\\tzcro\\documents\\gameprojects\\learningue5\\firstgame\\intermediate\\build\\win64\\unrealeditor\\inc\\firstgame\\uht\\firstactor.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

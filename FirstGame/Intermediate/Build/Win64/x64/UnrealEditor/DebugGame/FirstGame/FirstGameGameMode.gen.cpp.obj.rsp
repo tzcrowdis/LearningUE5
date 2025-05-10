@@ -1,11 +1,11 @@
-"C:\Users\tzcro\Documents\Unreal Book Project\FirstGame\Intermediate\Build\Win64\UnrealEditor\Inc\FirstGame\UHT\FirstGameGameMode.gen.cpp"
-/FI"C:\Users\tzcro\Documents\Unreal Book Project\FirstGame\Intermediate\Build\Win64\x64\FirstGameEditor\DebugGame\UnrealEd\SharedPCH.UnrealEd.Project.NonOptimized.ValApi.Cpp20.h"
-/FI"C:\Users\tzcro\Documents\Unreal Book Project\FirstGame\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\FirstGame\Definitions.FirstGame.h"
-/Yu"C:\Users\tzcro\Documents\Unreal Book Project\FirstGame\Intermediate\Build\Win64\x64\FirstGameEditor\DebugGame\UnrealEd\SharedPCH.UnrealEd.Project.NonOptimized.ValApi.Cpp20.h"
-/Fp"C:\Users\tzcro\Documents\Unreal Book Project\FirstGame\Intermediate\Build\Win64\x64\FirstGameEditor\DebugGame\UnrealEd\SharedPCH.UnrealEd.Project.NonOptimized.ValApi.Cpp20.h.pch"
-/Fo"C:\Users\tzcro\Documents\Unreal Book Project\FirstGame\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\FirstGame\FirstGameGameMode.gen.cpp.obj"
-/sourceDependencies "C:\Users\tzcro\Documents\Unreal Book Project\FirstGame\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\FirstGame\FirstGameGameMode.gen.cpp.dep.json"
-@"C:\Users\tzcro\Documents\Unreal Book Project\FirstGame\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\FirstGame\FirstGame.Shared.rsp"
+"C:\Users\tzcro\Documents\GameProjects\LearningUE5\FirstGame\Intermediate\Build\Win64\UnrealEditor\Inc\FirstGame\UHT\FirstGameGameMode.gen.cpp"
+/FI"C:\Users\tzcro\Documents\GameProjects\LearningUE5\FirstGame\Intermediate\Build\Win64\x64\FirstGameEditor\DebugGame\UnrealEd\SharedPCH.UnrealEd.Project.NonOptimized.ValApi.Cpp20.h"
+/FI"C:\Users\tzcro\Documents\GameProjects\LearningUE5\FirstGame\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\FirstGame\Definitions.FirstGame.h"
+/Yu"C:\Users\tzcro\Documents\GameProjects\LearningUE5\FirstGame\Intermediate\Build\Win64\x64\FirstGameEditor\DebugGame\UnrealEd\SharedPCH.UnrealEd.Project.NonOptimized.ValApi.Cpp20.h"
+/Fp"C:\Users\tzcro\Documents\GameProjects\LearningUE5\FirstGame\Intermediate\Build\Win64\x64\FirstGameEditor\DebugGame\UnrealEd\SharedPCH.UnrealEd.Project.NonOptimized.ValApi.Cpp20.h.pch"
+/Fo"C:\Users\tzcro\Documents\GameProjects\LearningUE5\FirstGame\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\FirstGame\FirstGameGameMode.gen.cpp.obj"
+/sourceDependencies "C:\Users\tzcro\Documents\GameProjects\LearningUE5\FirstGame\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\FirstGame\FirstGameGameMode.gen.cpp.dep.json"
+@"C:\Users\tzcro\Documents\GameProjects\LearningUE5\FirstGame\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\FirstGame\FirstGame.Shared.rsp"
 /Zc:inline
 /nologo
 /Oi

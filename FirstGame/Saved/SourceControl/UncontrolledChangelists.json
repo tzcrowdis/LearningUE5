@@ -5,17 +5,8 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
-				"C:/Users/tzcro/Documents/Unreal Book Project/FirstGame/Content/StarterContent/Architecture/Floor_400x400.uasset",
-				"C:/Users/tzcro/Documents/Unreal Book Project/FirstGame/Content/ThirdPerson/Maps/NewMap.umap",
-				"C:/Users/tzcro/Documents/Unreal Book Project/FirstGame/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/1/0G/HOAJZN9E4DDI6Y1W3JU13K.uasset",
-				"C:/Users/tzcro/Documents/Unreal Book Project/FirstGame/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/1/2J/AQ1PWWT9TBAI7AA470T014.uasset",
-				"C:/Users/tzcro/Documents/Unreal Book Project/FirstGame/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/1/HF/YFYBQ72OYLHJQS0TSSXGBV.uasset",
-				"C:/Users/tzcro/Documents/Unreal Book Project/FirstGame/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/9/6I/RU1L28PS820IOVH625A0DA.uasset",
-				"C:/Users/tzcro/Documents/Unreal Book Project/FirstGame/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/A/IO/07IVU4EY14FMETPGTJULEO.uasset",
-				"C:/Users/tzcro/Documents/Unreal Book Project/FirstGame/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/2/U9/2W5TUS8Y0LTE3A96T8L2FT.uasset",
-				"C:/Users/tzcro/Documents/Unreal Book Project/FirstGame/Content/Chapter2/FirstBlueprintActor.uasset",
-				"C:/Users/tzcro/Documents/Unreal Book Project/FirstGame/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/B/HM/RLFOD2RGAAQBWDFFPJZHKF.uasset",
-				"C:/Users/tzcro/Documents/Unreal Book Project/FirstGame/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/2/C3/M2QPFL5S7ENNQ5JMFML6WZ.uasset"
+				"C:/Users/tzcro/Documents/GameProjects/LearningUE5/FirstGame/Content/StarterContent/Architecture/Floor_400x400.uasset",
+				"C:/Users/tzcro/Documents/GameProjects/LearningUE5/FirstGame/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/9/CI/75G6NXHBKKILFVJ1VILPTI.uasset"
 			]
 		}
 	]

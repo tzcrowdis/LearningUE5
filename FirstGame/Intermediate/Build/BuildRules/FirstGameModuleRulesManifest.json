@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"C:\\Users\\tzcro\\Documents\\Unreal Book Project\\FirstGame\\Source\\FirstGame\\FirstGame.Build.cs",
-		"C:\\Users\\tzcro\\Documents\\Unreal Book Project\\FirstGame\\Source\\FirstGame.Target.cs",
-		"C:\\Users\\tzcro\\Documents\\Unreal Book Project\\FirstGame\\Source\\FirstGameEditor.Target.cs"
+		"C:\\Users\\tzcro\\Documents\\GameProjects\\LearningUE5\\FirstGame\\Source\\FirstGame\\FirstGame.Build.cs",
+		"C:\\Users\\tzcro\\Documents\\GameProjects\\LearningUE5\\FirstGame\\Source\\FirstGame.Target.cs",
+		"C:\\Users\\tzcro\\Documents\\GameProjects\\LearningUE5\\FirstGame\\Source\\FirstGameEditor.Target.cs"
 	],
 	"EngineVersion": "5.4.4"
 }
