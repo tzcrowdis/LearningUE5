@@ -10,10 +10,25 @@ UCLASS()
 class FIRSTGAME_API AFirstActor : public AActor
 {
 	GENERATED_BODY()
-	
+
 public:	
 	// Sets default values for this actor's properties
 	AFirstActor();
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="Learning About Specifiers")
+	float ActorLifetime;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Learning About Specifiers")
+	int32 ActorLevel;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category="Learning About Components")
+	class UStaticMeshComponent* FirstActorMesh;
+
+	UFUNCTION(BlueprintCallable)
+	void CheckLifeTime();
+
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
+	void PrintLevel();
 
 protected:
 	// Called when the game starts or when spawned

@@ -7,9 +7,11 @@
 /IGNORE:4221
 /NODEFAULTLIB
 "C:\Users\tzcro\Documents\GameProjects\LearningUE5\FirstGame\Intermediate\Build\Win64\x64\FirstGameEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.obj"
+"C:\Users\tzcro\Documents\GameProjects\LearningUE5\FirstGame\Intermediate\Build\Win64\x64\UnrealEditor\Development\FirstGame\FirstActor.gen.cpp.obj"
 "C:\Users\tzcro\Documents\GameProjects\LearningUE5\FirstGame\Intermediate\Build\Win64\x64\UnrealEditor\Development\FirstGame\FirstGame.init.gen.cpp.obj"
 "C:\Users\tzcro\Documents\GameProjects\LearningUE5\FirstGame\Intermediate\Build\Win64\x64\UnrealEditor\Development\FirstGame\FirstGameCharacter.gen.cpp.obj"
 "C:\Users\tzcro\Documents\GameProjects\LearningUE5\FirstGame\Intermediate\Build\Win64\x64\UnrealEditor\Development\FirstGame\FirstGameGameMode.gen.cpp.obj"
+"C:\Users\tzcro\Documents\GameProjects\LearningUE5\FirstGame\Intermediate\Build\Win64\x64\UnrealEditor\Development\FirstGame\FirstActor.cpp.obj"
 "C:\Users\tzcro\Documents\GameProjects\LearningUE5\FirstGame\Intermediate\Build\Win64\x64\UnrealEditor\Development\FirstGame\FirstGame.cpp.obj"
 "C:\Users\tzcro\Documents\GameProjects\LearningUE5\FirstGame\Intermediate\Build\Win64\x64\UnrealEditor\Development\FirstGame\FirstGameCharacter.cpp.obj"
 "C:\Users\tzcro\Documents\GameProjects\LearningUE5\FirstGame\Intermediate\Build\Win64\x64\UnrealEditor\Development\FirstGame\FirstGameGameMode.cpp.obj"
