@@ -72,3 +72,11 @@ Plugins/**/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+
+# Marketplace Assets
+/FirstGame/Content/ParagonCountess
+/FirstGame/Content/SoulCave
+/FirstGame/Intermediate
+/FirstGame/Saved
+/FirstGame/Binaries
+/FirstGame/Build

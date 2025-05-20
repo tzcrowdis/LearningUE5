@@ -66,5 +66,17 @@
     <ClInclude Include="..\..\Source\FirstGame\FirstPawn.h">
       <Filter>Source\FirstGame</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\FirstGame\MainAnimInstance.cpp">
+      <Filter>Source\FirstGame</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FirstGame\MainAnimInstance.h">
+      <Filter>Source\FirstGame</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FirstGame\MainCharacter.cpp">
+      <Filter>Source\FirstGame</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FirstGame\MainCharacter.h">
+      <Filter>Source\FirstGame</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
