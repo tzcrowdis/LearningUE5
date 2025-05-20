@@ -18,7 +18,7 @@ public:
 	virtual void NativeInitializeAnimation() override;
 
 	UFUNCTION(BlueprintCallable, Category=AnimationProperties)
-	void UpdateAnimationProperties();
+	void UpdateAnimationProperties(float DeltaTime);
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Movement)
 	float MovementSpeed;
@@ -28,6 +28,12 @@ public:
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Movement)
 	bool bIsAccelerating;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Movement)
+	float YawDelta;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Movement)
+	FRotator RotationLastFrame;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Movement)
 	class APawn* Pawn;
