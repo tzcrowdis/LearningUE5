@@ -5,3 +5,4 @@
 
 IMPLEMENT_PRIMARY_GAME_MODULE( FDefaultGameModuleImpl, FirstGame, "FirstGame" );
  
+DEFINE_LOG_CATEGORY(CountessLog);
