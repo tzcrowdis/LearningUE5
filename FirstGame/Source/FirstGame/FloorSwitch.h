@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "MainPlayerController.h"
 #include "FloorSwitch.generated.h"
 
 UCLASS()
@@ -11,6 +12,14 @@ class FIRSTGAME_API AFloorSwitch : public AActor
 {
 	GENERATED_BODY()
 	
+	AMainPlayerController* MainPlayerController;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Switch", meta = (AllowPrivateAccess = "true"))
+	TArray<class ASwitchTarget*> SwitchTargets;
+
+	UFUNCTION(BlueprintCallable)
+	void ActivateSwitchTargets();
+
 public:	
 	// Sets default values for this actor's properties
 	AFloorSwitch();

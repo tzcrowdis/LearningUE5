@@ -114,5 +114,23 @@
     <ClInclude Include="..\..\Source\FirstGame\OverlapActor.h">
       <Filter>Source\FirstGame</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\FirstGame\RotatingActor.cpp">
+      <Filter>Source\FirstGame</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FirstGame\RotatingActor.h">
+      <Filter>Source\FirstGame</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FirstGame\SwitchInterface.cpp">
+      <Filter>Source\FirstGame</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FirstGame\SwitchInterface.h">
+      <Filter>Source\FirstGame</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FirstGame\SwitchTarget.cpp">
+      <Filter>Source\FirstGame</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FirstGame\SwitchTarget.h">
+      <Filter>Source\FirstGame</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

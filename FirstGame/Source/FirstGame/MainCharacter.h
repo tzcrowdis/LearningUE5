@@ -6,6 +6,10 @@
 #include "GameFramework/Character.h"
 #include "MainCharacter.generated.h"
 
+DECLARE_DELEGATE(FRotateDelegate);
+DECLARE_DYNAMIC_DELEGATE_RetVal_OneParam(float, FDynamicRotateDelegate, float, RotationSpeed);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FDynamicMulticastRotateDelegate, bool, bPlaySound);
+
 UCLASS()
 class FIRSTGAME_API AMainCharacter : public ACharacter
 {
@@ -20,6 +24,9 @@ class FIRSTGAME_API AMainCharacter : public ACharacter
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Controller", meta = (AllowPrivateAccess = "true"))
 	class AMainPlayerController* MainPlayerController;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
+	float RotatingActorRotate;
+
 public:
 	// Sets default values for this character's properties
 	AMainCharacter();
@@ -28,6 +35,15 @@ public:
 	void SetHealth(float Amount);
 	FORCEINLINE float GetMaxHealth() { return MaxHealth; }
 	FORCEINLINE void SetMaxHealth(float Amount) { MaxHealth = Amount; }
+
+	FRotateDelegate RotateDelegate;
+	FDynamicRotateDelegate DynamicRotateDelegate;
+
+	UPROPERTY(BlueprintAssignable)
+	FDynamicMulticastRotateDelegate DynamicMulticastRotateDelegate;
+
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Delegates")
+	bool bShouldRotatorsPlaySound;
 
 protected:
 	// Called when the game starts or when spawned
@@ -65,4 +81,12 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void LoadGame();
 
+	UFUNCTION(BlueprintCallable)
+	void ToggleAllRotators();
+
+	UFUNCTION(BlueprintCallable)
+	void SetRotatingActorRates(float Rate);
+
+	UFUNCTION(BlueprintCallable)
+	void PlaySoundAtRotatingActors(bool PlaySound);
 };

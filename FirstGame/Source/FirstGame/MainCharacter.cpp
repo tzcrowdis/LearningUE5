@@ -13,6 +13,7 @@
 #include "Kismet/GameplayStatics.h"
 #include "FirstGame.h"
 #include "DrawDebugHelpers.h"
+#include "RotatingActor.h"
 
 // Sets default values
 AMainCharacter::AMainCharacter()
@@ -38,6 +39,10 @@ AMainCharacter::AMainCharacter()
 
 	Health = 85.f;
 	MaxHealth = 100.f;
+
+	RotatingActorRotate = 180.f;
+
+	bShouldRotatorsPlaySound = true;
 }
 
 void AMainCharacter::SetHealth(float Amount)
@@ -132,7 +137,8 @@ void AMainCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	printf_k(1, "DeltaTime: %f", DeltaTime);
+	
+	/*printf_k(1, "DeltaTime: %f", DeltaTime);
 
 	DrawDebugPoint(GetWorld(), GetActorLocation() + FVector(0.f, 0.f, 50.f), 5.f, FColor::Blue, false, 3.f);
 	DrawDebugLine(GetWorld(), FVector(0.f, 0.f, 400.f), GetActorLocation(), FColor::Red, false, -1.f);
@@ -171,14 +177,14 @@ void AMainCharacter::Tick(float DeltaTime)
 	*/
 
 	// single box trace by object (not channel)
-	TArray<TEnumAsByte<EObjectTypeQuery>> ObjectTypes;
+	/*TArray<TEnumAsByte<EObjectTypeQuery>> ObjectTypes;
 	ObjectTypes.Add(EObjectTypeQuery::ObjectTypeQuery2);
 	TArray<AActor*> ActorsToIgnore;
 	ActorsToIgnore.Add(this);
 	FHitResult BoxTraceResult;
 	UKismetSystemLibrary::BoxTraceSingleForObjects(GetWorld(), Start, End, FVector(32.f, 32.f, 32.f), FRotator(), ObjectTypes, true, ActorsToIgnore, EDrawDebugTrace::ForOneFrame, BoxTraceResult, true, FColor::Red, FColor::Blue);
 	if (BoxTraceResult.bBlockingHit)
-		print_k(1, "Blocking Hit");
+		print_k(1, "Blocking Hit");*/
 }
 
 // Called to bind functionality to input
@@ -224,4 +230,33 @@ void AMainCharacter::LoadGame()
 
 	SetActorLocation(LoadGameInstance->WorldLocation);
 	SetActorRotation(LoadGameInstance->WorldRotation);
+}
+
+void AMainCharacter::ToggleAllRotators()
+{
+	RotateDelegate.ExecuteIfBound();
+	
+	/*
+	TSubclassOf<AActor> WorldClassObject = ARotatingActor::StaticClass();
+	TArray<AActor*> ActorsOfClass;
+	UGameplayStatics::GetAllActorsOfClass(this, WorldClassObject, ActorsOfClass);
+	for (AActor* Actor : ActorsOfClass)
+	{
+		ARotatingActor* RotatingActor = Cast<ARotatingActor>(Actor);
+		if (RotatingActor)
+			RotatingActor->ToggleRotate();
+	}
+	*/
+}
+
+void AMainCharacter::SetRotatingActorRates(float Rate)
+{
+	float PreviousRotationRate = DynamicRotateDelegate.Execute(Rate);
+	printf("Previous Rotation Rate: %f", PreviousRotationRate);
+}
+
+void AMainCharacter::PlaySoundAtRotatingActors(bool PlaySound)
+{
+	DynamicMulticastRotateDelegate.Broadcast(PlaySound);
+	print("playing sound");
 }
