@@ -14,6 +14,11 @@
 #include "FirstGame.h"
 #include "DrawDebugHelpers.h"
 #include "RotatingActor.h"
+#include "NavigationSystem.h"
+#include "NavigationPath.h"
+
+#include "Enemy.h"
+#include "Engine/SkeletalMeshSocket.h"
 
 // Sets default values
 AMainCharacter::AMainCharacter()
@@ -39,6 +44,8 @@ AMainCharacter::AMainCharacter()
 
 	Health = 85.f;
 	MaxHealth = 100.f;
+	XP = 0;
+	Damage = 10.f;
 
 	RotatingActorRotate = 180.f;
 
@@ -89,6 +96,23 @@ void AMainCharacter::BeginPlay()
 	print_k(2, "you will only see one of these print_k messages");
 
 	printf("Formatting the string with Actor name: %s", *GetName());
+
+	// ai navigation
+	TSubclassOf<AActor> WorldClassObject = ARotatingActor::StaticClass();
+	TArray<AActor*> ActorsOfClass;
+	UGameplayStatics::GetAllActorsOfClass(this, WorldClassObject, ActorsOfClass);
+	if (ActorsOfClass.Num() > 0)
+	{
+		UNavigationPath* NavPath = UNavigationSystemV1::FindPathToActorSynchronously(this, GetActorLocation(), ActorsOfClass[0]);
+		if (NavPath->PathPoints.Num() > 0)
+		{
+			print("path points found");
+			for (auto pt : NavPath->PathPoints)
+			{
+				DrawDebugSphere(GetWorld(), pt, 20.f, 12, FColor::Red, true);
+			}
+		}
+	}
 }
 
 void AMainCharacter::MoveForward(float Value)
@@ -259,4 +283,40 @@ void AMainCharacter::PlaySoundAtRotatingActors(bool PlaySound)
 {
 	DynamicMulticastRotateDelegate.Broadcast(PlaySound);
 	print("playing sound");
+}
+
+void AMainCharacter::SwordBoxBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
+{
+	if (OtherActor)
+	{
+		AEnemy* Enemy = Cast<AEnemy>(OtherActor);
+		if (Enemy)
+		{
+			if (Enemy->HitParticles)
+			{
+				const USkeletalMeshSocket* WeaponSocket = GetMesh()->GetSocketByName("WeaponBladeLSocket");
+				if (WeaponSocket)
+				{
+					FVector SocketLocation = WeaponSocket->GetSocketLocation(GetMesh());
+
+					UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), Enemy->HitParticles, SocketLocation, FRotator(0.f), false);
+				}
+			}
+
+			if (Enemy->HitSound)
+			{
+				UGameplayStatics::PlaySound2D(this, Enemy->HitSound);
+			}
+
+			if (DamageTypeClass)
+			{
+				UGameplayStatics::ApplyDamage(Enemy, Damage, GetController(), this, DamageTypeClass);
+			}
+		}
+	}
+}
+
+void AMainCharacter::DeathEnd()
+{
+	UKismetSystemLibrary::QuitGame(this, Cast<APlayerController>(GetController()), EQuitPreference::Quit, true);
 }

@@ -20,7 +20,7 @@ public:
 	UFUNCTION(BlueprintCallable, Category=AnimationProperties)
 	void UpdateAnimationProperties(float DeltaTime);
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Movement)
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Movement)
 	float MovementSpeed;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Movement)
@@ -40,4 +40,7 @@ public:
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Movement)
 	class AMainCharacter* Main;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Movement)
+	class AEnemy* Enemy;
 };

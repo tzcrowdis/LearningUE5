@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GameFramework/Character.h"
+#include "BaseCharacter.h"
 #include "MainCharacter.generated.h"
 
 DECLARE_DELEGATE(FRotateDelegate);
@@ -11,7 +11,7 @@ DECLARE_DYNAMIC_DELEGATE_RetVal_OneParam(float, FDynamicRotateDelegate, float, R
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FDynamicMulticastRotateDelegate, bool, bPlaySound);
 
 UCLASS()
-class FIRSTGAME_API AMainCharacter : public ACharacter
+class FIRSTGAME_API AMainCharacter : public ABaseCharacter
 {
 	GENERATED_BODY()
 
@@ -35,6 +35,7 @@ public:
 	void SetHealth(float Amount);
 	FORCEINLINE float GetMaxHealth() { return MaxHealth; }
 	FORCEINLINE void SetMaxHealth(float Amount) { MaxHealth = Amount; }
+	FORCEINLINE void AddXP(int32 AddedXP) { XP += AddedXP; }
 
 	FRotateDelegate RotateDelegate;
 	FDynamicRotateDelegate DynamicRotateDelegate;
@@ -55,18 +56,6 @@ protected:
 	void LMBDown();
 
 	void ESCDown();
-
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category="Combat")
-	bool bAttacking;
-
-	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category="Anims")
-	class UAnimMontage* CountessAttackMontage;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PlayerStats")
-	float Health;
-
-	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "PlayerStats")
-	float MaxHealth;
 
 public:	
 	// Called every frame
@@ -89,4 +78,8 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	void PlaySoundAtRotatingActors(bool PlaySound);
+
+	virtual void SwordBoxBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult) override;
+
+	virtual void DeathEnd() override;
 };

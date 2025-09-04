@@ -2,7 +2,10 @@
 	"RemapUnityFiles": 
 	{
 		"Module.FirstGame.cpp.obj": [
+			"BaseCharacter.gen.cpp.obj",
 			"CountessSaveGame.gen.cpp.obj",
+			"Enemy.gen.cpp.obj",
+			"EnemyController.gen.cpp.obj",
 			"FirstActor.gen.cpp.obj",
 			"FirstGameCharacter.gen.cpp.obj",
 			"FirstGameGameMode.gen.cpp.obj",
@@ -19,21 +22,24 @@
 			"SwitchTarget.gen.cpp.obj",
 			"CountessSaveGame.cpp.obj",
 			"FirstActor.cpp.obj",
-			"FirstGame.cpp.obj",
 			"FirstGameCharacter.cpp.obj",
 			"FirstGameGameMode.cpp.obj",
 			"FirstPawn.cpp.obj",
+			"FloorSwitch.cpp.obj",
 			"HealthPickup.cpp.obj",
 			"Item.cpp.obj",
-			"MainAnimInstance.cpp.obj",
 			"MainPlayerController.cpp.obj",
 			"OverlapActor.cpp.obj",
-			"FirstGame.init.gen.cpp.obj",
-			"FloorSwitch.cpp.obj",
-			"MainCharacter.cpp.obj",
 			"RotatingActor.cpp.obj",
 			"SwitchInterface.cpp.obj",
-			"SwitchTarget.cpp.obj"
+			"SwitchTarget.cpp.obj",
+			"FirstGame.init.gen.cpp.obj",
+			"BaseCharacter.cpp.obj",
+			"Enemy.cpp.obj",
+			"EnemyController.cpp.obj",
+			"FirstGame.cpp.obj",
+			"MainAnimInstance.cpp.obj",
+			"MainCharacter.cpp.obj"
 		]
 	}
 }

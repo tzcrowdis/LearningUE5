@@ -33,10 +33,28 @@
     <Filter Include="Source\FirstGame">
       <UniqueIdentifier>{F7BA53D2-49D5-3875-9D57-374F8D9D0797}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\FirstGame\BaseCharacter.cpp">
+      <Filter>Source\FirstGame</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FirstGame\BaseCharacter.h">
+      <Filter>Source\FirstGame</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\FirstGame\CountessSaveGame.cpp">
       <Filter>Source\FirstGame</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\FirstGame\CountessSaveGame.h">
+      <Filter>Source\FirstGame</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FirstGame\Enemy.cpp">
+      <Filter>Source\FirstGame</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FirstGame\Enemy.h">
+      <Filter>Source\FirstGame</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FirstGame\EnemyController.cpp">
+      <Filter>Source\FirstGame</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FirstGame\EnemyController.h">
       <Filter>Source\FirstGame</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\FirstGame\FirstActor.cpp">

@@ -7,11 +7,11 @@
 // Countess Log Type
 DECLARE_LOG_CATEGORY_EXTERN(CountessLog, VeryVerbose, Log);
 
-#define print(Text) if (GEngine) GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::White, TEXT(Text), false)
+#define print(Text) if (GEngine) GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT(Text), false)
 
 #define print_k(Key, Text) if (GEngine) GEngine->AddOnScreenDebugMessage(Key, 2.f, FColor::White, TEXT(Text))
 
-#define printf(Format, ...) if (GEngine) GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::White, FString::Printf(TEXT(Format), ##__VA_ARGS__), false)
+#define printf(Format, ...) if (GEngine) GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, FString::Printf(TEXT(Format), ##__VA_ARGS__), false)
 
 #define printf_k(Key, Format, ...) if (GEngine) GEngine->AddOnScreenDebugMessage(Key, 1.5f, FColor::White, FString::Printf(TEXT(Format), ##__VA_ARGS__))
 
